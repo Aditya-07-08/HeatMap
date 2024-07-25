@@ -1,0 +1,30 @@
+<div class="months">
+  <p class="month" style="grid-column: 1 / span 4;">Jan</p>
+  <p class="month" style="grid-column: 5 / span 4;">Feb</p>
+  <p class="month" style="grid-column: 9 / span 5;">Mar</p>
+  <p class="month" style="grid-column: 14 / span 4;">Apr</p>
+  <p class="month" style="grid-column: 18 / span 4;">May</p>
+  <p class="month" style="grid-column: 22 / span 5;">Jun</p>
+  <p class="month" style="grid-column: 27 / span 4;">Jul</p>
+  <p class="month" style="grid-column: 31 / span 4;">Aug</p>
+  <p class="month" style="grid-column: 35 / span 5;">Sep</p>
+  <p class="month" style="grid-column: 40 / span 4;">Oct</p>
+  <p class="month" style="grid-column: 44 / span 4;">Nov</p>
+  <p class="month" style="grid-column: 48 / span 5;">Dec</p>
+</div>
+<div class="heatmap-content">
+  <div class="days">
+    <p class="day-name">Sun</p>
+    <p class="day-name">Mon</p>
+    <p class="day-name">Tue</p>
+    <p class="day-name">Wed</p>
+    <p class="day-name">Thu</p>
+    <p class="day-name">Fri</p>
+    <p class="day-name">Sat</p>
+  </div>
+<div class="heatmap-main-container">
+    <div *ngFor="let week of heatMapData; let i = index" class="week">
+      <div *ngFor="let day of week; let j = index" [ngStyle]="{'background-color': getCellColor(day)}" class="day"> 
+    </div>
+    </div>
+  </div>
