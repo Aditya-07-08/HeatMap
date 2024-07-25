@@ -1,5 +1,18 @@
 # HeatMap
 
+## Angular Heatmap Component
+# Overview
+
+This project is an Angular component that visualizes data in a heatmap format. The heatmap represents the frequency and intensity of events occurring over the year, with each cell in the grid corresponding to a day.
+
+# Features
+Dynamic Heatmap Rendering: Renders a heatmap grid where each cell represents a day, and the color intensity represents the event's intensity.
+Real-time Data Updates: Utilizes Angular services and RxJS observables to listen for new data and update the heatmap accordingly.
+Customizable: Easily modify the color scheme and intensity scale.
+
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/a72c42f2-5750-44bf-8046-94a1d223ca60">
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
 
 ## Development server
